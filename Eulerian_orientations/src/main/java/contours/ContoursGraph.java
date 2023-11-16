@@ -1,9 +1,12 @@
 package contours;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class ContoursGraph {
     private int m = 3;
 
-    public ContoursGraph(int[][] graphArray) {
+    public ContoursGraph(int[][] graphArray, FileWriter writer) {
         int [] contour = new int[graphArray.length - m + 1];
 
         for (int i = 0; i < graphArray.length; i++) {
@@ -11,7 +14,12 @@ public class ContoursGraph {
             var(graphArray, contour, vertex, i, 0, -1);
         }
         for (int i = 0; i < contour.length; i++) {
-            System.out.println("Количество контуров длины " + (i+m) + " : " + contour[i]);
+            try {
+                writer.write("Number of contours of length " + (i+m) + " : " + contour[i] + "\n");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            // System.out.println("Количество контуров длины " + (i+m) + " : " + contour[i]);
         }
 
     }

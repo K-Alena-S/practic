@@ -24,6 +24,21 @@ public class Matrix {
 //        }
     }
 
+    public void deleteColumn(int a, int b) {
+        // удаляем столбец b, значения смещаем в a
+
+        for (int i = 0; i < size; i++) {
+            if (repres[i][b] == 1) repres[i][a] = 1;
+        }
+        for (int i = 0; i < size; i++) {
+            for (int j = b; j < size - 1; j++) {
+                repres[i][j] = repres[i][j+1];
+            }
+        }
+        size--;
+        outpud_file();
+    }
+
     public void setRepres(int a, int b) {
         if (a >= size || b >= size) {
             // создать матрицу размером больше и перенести матрицу
@@ -48,7 +63,7 @@ public class Matrix {
         return repres;
     }
 
-    private String file = "Eulerian_orientations/src/main/resources/g11/graph11_matrix.txt";
+    private String file = "Eulerian_orientations/src/main/resources/g13/graph13_matrix.txt";
 
     public void outpud_file() {
         try(FileWriter writer = new FileWriter(file)){

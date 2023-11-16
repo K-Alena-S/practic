@@ -1,7 +1,5 @@
 package transition_to_class;
 
-// import classification.ClassSearchEven;
-// import classification.ClassSearchOdd;
 import classification.Collection;
 
 import java.util.Arrays;
@@ -16,16 +14,16 @@ public class Transition {
     private int cont = 0;
     private Collection col;
     private int in;
-    private int begin_class = 48; // на 1 меньше
-    private int begin_contour = 0; // будет вычисляться класс для begin_contour+1 контура
+    private int begin_class = 1; // на 1 меньше
+    // private int end_class = 50; // col.get_list().size();
+    private int begin_contour = 7; // будет вычисляться класс для begin_contour+1 контура
     private Matrix matr;
-    private int num_thread = 16;
+    private int num_thread = 4;
 
     public Transition(Collection col){
         this.col = col;
         matr = new Matrix(col);
-       for (int i = begin_class; i < col.get_list().size(); i++) {
-            // int i = begin_class;
+        for (int i = begin_class; i < col.get_list().size(); i++) {
             in = i;
 
             System.out.println();
@@ -40,7 +38,7 @@ public class Transition {
             }
         }
 
-        while (Thread.activeCount() > 2) {
+        while (Thread.activeCount() > 1) {
             try {
                 sleep(1000);
             } catch (InterruptedException e) {
