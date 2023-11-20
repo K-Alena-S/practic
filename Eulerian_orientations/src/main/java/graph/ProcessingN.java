@@ -61,11 +61,11 @@ public class ProcessingN {
 
         // new Transition(col);
 
-        for (int i = 800; i < col.get_list().size(); i++) {
-            // { int i = 54;
-            System.out.println("class : " + (i+1));
-            new Sum(col.get_list().get(i), (i+1));
-        }
+        // for (int i = 800; i < col.get_list().size(); i++) {
+        //     // { int i = 54;
+        //     System.out.println("class : " + (i+1));
+        //     new Sum(col.get_list().get(i), (i+1));
+        // }
         
 
         // System.out.println(Arrays.deepToString(col.get_list().get(0)).replace("], ", "\n")
@@ -73,8 +73,8 @@ public class ProcessingN {
         //         .replace("-1", "0")
         // );
 
-        // FileMatrix fm = new FileMatrix(col);
-        // fm.outpud_file();
+        FileMatrix fm = new FileMatrix(col);
+        fm.outpud_file();
         
     }
 
