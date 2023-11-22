@@ -26,19 +26,19 @@ public class ProcessingN {
 
         file_scan(N, col);
 
-        // file(col);
+        // f/ile(col);
 
         // Matrix matr = new Matrix(col);
-        // matr.deleteColumn(688, 689);
-        // matr.deleteColumn(531, 532);
-        // matr.deleteColumn(516, 689);
+        // matr.deleteColumn(960, 961);
+        // matr.deleteColumn(1000, 1001);
+        // matr.deleteColumn(1053, 1057);
 
 
         // int beg = 0;
         // int end = col.get_list().size();
 
-        // for (int i = 882; i < col.get_list().size(); i++) {
-        //     beg = i - 5;
+        // for (int i = 325; i < col.get_list().size(); i++) {
+        //     beg = i - 10;
 
         //     while (Thread.activeCount() > 8) {
         //         try {
@@ -61,7 +61,7 @@ public class ProcessingN {
 
         // new Transition(col);
 
-        // for (int i = 800; i < col.get_list().size(); i++) {
+        // for (int i = 0; i < col.get_list().size(); i++) {
         //     // { int i = 54;
         //     System.out.println("class : " + (i+1));
         //     new Sum(col.get_list().get(i), (i+1));
@@ -78,32 +78,32 @@ public class ProcessingN {
         
     }
 
-    private void file(Collection col){
-        try {
-            FileInputStream fis = new FileInputStream("Eulerian_orientations/src/main/resources/g9/class.tmp");
-            ObjectInputStream ois = new ObjectInputStream(fis);
-            ArrayList<int[][]> list = (ArrayList<int[][]>) ois.readObject();
-            System.out.println("***** " + list.size());
+    // private void file(Collection col){
+    //     try {
+    //         FileInputStream fis = new FileInputStream("Eulerian_orientations/src/main/resources/g9/class.tmp");
+    //         ObjectInputStream ois = new ObjectInputStream(fis);
+    //         ArrayList<int[][]> list = (ArrayList<int[][]>) ois.readObject();
+    //         System.out.println("***** " + list.size());
 
-            for (int i = 0; i < list.size(); i++) {
-                col.set_list(list.get(i));
+    //         for (int i = 0; i < list.size(); i++) {
+    //             col.set_list(list.get(i));
 
-    //             if (i > 260){
-    //                 System.out.println("Представитель класса: " + (i + 1));
-    //                 new ContoursGraph(list.get(i));
-    //                 System.out.println(Arrays.deepToString(list.get(i)).replace("], ", "\n")
-    //                                 .replace("[", "").replace("]", "")
-    // //                .replace("-1", "0")
-    //                 );
-    //                 System.out.println();
-    //             }
-            }
+    // //             if (i > 260){
+    // //                 System.out.println("Представитель класса: " + (i + 1));
+    // //                 new ContoursGraph(list.get(i));
+    // //                 System.out.println(Arrays.deepToString(list.get(i)).replace("], ", "\n")
+    // //                                 .replace("[", "").replace("]", "")
+    // // //                .replace("-1", "0")
+    // //                 );
+    // //                 System.out.println();
+    // //             }
+    //         }
 
-            ois.close();
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
+    //         ois.close();
+    //     } catch (IOException | ClassNotFoundException e) {
+    //         e.printStackTrace();
+    //     }
+    // }
 
 
     private void file_scan(int N, Collection col) {
@@ -125,6 +125,8 @@ public class ProcessingN {
         
                 }
                 int[][] a = Arrays.stream(matrix).map(int[]::clone).toArray(int[][]::new);
+
+                // if (k != 961 && k != 1001 && k != 1057)
                 col.set_list(a);
 
                 reader.readLine();

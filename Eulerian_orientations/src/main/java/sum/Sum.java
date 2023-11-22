@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class Sum {
 
-    private String file = "Eulerian_orientations/src/main/resources/g11/g11_m2_800-.txt";
+    private String file = "Eulerian_orientations/src/main/resources/g11/g11_m2.txt";
     private int M = 2;
     private int N;
 
@@ -34,7 +34,7 @@ public class Sum {
             // bufferWriter.write(writer);
             
             bufferWriter.write("Class: " + n_class + "\n");
-            bufferWriter.write(Arrays.toString(str_prev) + "     " + (count) + "\n");
+            // bufferWriter.write(Arrays.toString(str_prev) + "     " + (count) + "\n");
 
             while (count < 1500 && rev < 20) {
 
@@ -63,7 +63,7 @@ public class Sum {
                 }
                 count++;
 
-                bufferWriter.write(Arrays.toString(str_prev) + "     " + (count) + "\n");
+                // bufferWriter.write(Arrays.toString(str_prev) + "     " + (count) + "\n");
                 // System.out.println(Arrays.toString(str_prev) + "     " +(count));
                 // int number = 0;
                 // for (int i = 0; i < graph.length; i++) {
@@ -116,6 +116,7 @@ public class Sum {
             // System.out.println();
             // System.out.println(rev + " ^ " + count);
             bufferWriter.close();
+            writer.close();
         } catch(IOException ex){
             System.out.println(ex.getMessage());
         }
