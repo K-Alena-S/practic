@@ -14,7 +14,7 @@ public class FileMatrix {
         this.col = col;
     }
 
-    private String file = "Eulerian_orientations/src/main/resources/g11/matrix.txt";
+    private String file = "Eulerian_orientations/src/main/resources/g11/matr.txt";
 
     public void outpud_file() {
         try(FileWriter writer = new FileWriter(file)){
