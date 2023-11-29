@@ -3,6 +3,7 @@ package graph;
 import classification.ClassSearchOdd;
 import classification.Collection;
 import contours.ContoursGraph;
+import dinamic.DynamicSystem;
 import sum.Sum;
 import transition_to_class.Transition;
 import transition_to_class.FileMatrix;
@@ -26,52 +27,52 @@ public class ProcessingN {
 
         file_scan(N, col);
 
-        // f/ile(col);
+        // file(col);
 
         // Matrix matr = new Matrix(col);
-        // matr.deleteColumn(960, 961);
-        // matr.deleteColumn(1000, 1001);
-        // matr.deleteColumn(1053, 1057);
+        // matr.deleteColumn(1185, 1188);
 
 
-        // int beg = 0;
-        // int end = col.get_list().size();
+    //     int beg = 0;
+    //     int end = col.get_list().size();
 
-        // for (int i = 325; i < col.get_list().size(); i++) {
-        //     beg = i - 10;
+    //     for (int i = 1203; i < col.get_list().size(); i++) {
+    //         beg = i - 8;
 
-        //     while (Thread.activeCount() > 8) {
-        //         try {
-        //             sleep(1000);
-        //         } catch (InterruptedException e) {
-        //             e.printStackTrace();
-        //         }
-        //     }
-        //     MyThr mt = new MyThr(col.get_list().get(i), col, i, beg, end);
+    //         while (Thread.activeCount() > 8) {
+    //             try {
+    //                 sleep(1000);
+    //             } catch (InterruptedException e) {
+    //                 e.printStackTrace();
+    //             }
+    //         }
+    //         MyThr mt = new MyThr(col.get_list().get(i), col, i, beg, end);
 
-        //     new Thread(mt).start();
+    //         new Thread(mt).start();
 
 
-        //     // ClassSearchOdd cso = new ClassSearchOdd(col.get_list().get(i), col, i, beg, end);
-        //     // System.out.println("i = " + (i+1) + "  class = " + cso.getClassgraph());
-        //     // if (i+1 !=  cso.getClassgraph()) {
-        //     //     System.out.println("!!!!!!!!!!!!!!!!!!!!   " +  cso.getClassgraph());
-        //     // }
-        // }
+    //         // ClassSearchOdd cso = new ClassSearchOdd(col.get_list().get(i), col, i, beg, end);
+    //         // System.out.println("i = " + (i+1) + "  class = " + cso.getClassgraph());
+    //         // if (i+1 !=  cso.getClassgraph()) {
+    //         //     System.out.println("!!!!!!!!!!!!!!!!!!!!   " +  cso.getClassgraph());
+    //         // }
+    //     }
 
-        // new Transition(col);
+    //     // new Transition(col);
 
-        // for (int i = 0; i < col.get_list().size(); i++) {
-        //     // { int i = 54;
-        //     System.out.println("class : " + (i+1));
-        //     new Sum(col.get_list().get(i), (i+1));
-        // }
+    //     // for (int i = 0; i < col.get_list().size(); i++) {
+    //     //     // { int i = 54;
+    //     //     System.out.println("class : " + (i+1));
+    //     //     new Sum(col.get_list().get(i), (i+1));
+    //     // }
+
+    //     // new DynamicSystem(col.get_list().get(0));
         
 
-        // System.out.println(Arrays.deepToString(col.get_list().get(0)).replace("], ", "\n")
-        //         .replace("[", "").replace("]", "")
-        //         .replace("-1", "0")
-        // );
+    //     // System.out.println(Arrays.deepToString(col.get_list().get(0)).replace("], ", "\n")
+    //     //         .replace("[", "").replace("]", "")
+    //     //         .replace("-1", "0")
+    //     // );
 
         FileMatrix fm = new FileMatrix(col);
         fm.outpud_file();
@@ -110,7 +111,7 @@ public class ProcessingN {
         try {
             BufferedReader reader = new BufferedReader(new FileReader("Eulerian_orientations/src/main/resources/g11/matrix.txt"));
             int num = Integer.parseInt(reader.readLine());
-            // System.out.println("Количество классов " + num);
+            System.out.println("Количество классов " + num);
             reader.readLine();
 
             for (int k = 0; k < num; k++) {
@@ -126,7 +127,7 @@ public class ProcessingN {
                 }
                 int[][] a = Arrays.stream(matrix).map(int[]::clone).toArray(int[][]::new);
 
-                // if (k != 961 && k != 1001 && k != 1057)
+                // if (k != 1188 && k != 1207)
                 col.set_list(a);
 
                 reader.readLine();

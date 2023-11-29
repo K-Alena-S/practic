@@ -7,9 +7,11 @@ import java.util.Arrays;
 
 public class Sum {
 
-    private String file = "Eulerian_orientations/src/main/resources/g11/g11_m2.txt";
+    private String file = "Eulerian_orientations/src/main/resources/g9/g9_m2_8.txt";
     private int M = 2;
     private int N;
+
+    private int pos = 8;
 
     public Sum(int[][] graph, int n_class) {
         N = graph.length;
@@ -20,8 +22,8 @@ public class Sum {
         int[] str4 = new int[graph.length];
         int[] str_prev = new int[graph.length];
         int[] str_new = new int[graph.length];
-        str0[0] = 1;
-        str_prev[0] = 1;
+        str0[pos] = 1;
+        str_prev[pos] = 1;
         // System.out.println(1);
 
         // System.out.println(Arrays.toString(str_prev));
@@ -34,7 +36,7 @@ public class Sum {
             // bufferWriter.write(writer);
             
             bufferWriter.write("Class: " + n_class + "\n");
-            // bufferWriter.write(Arrays.toString(str_prev) + "     " + (count) + "\n");
+            bufferWriter.write(Arrays.toString(str_prev) + "     " + (count) + "\n");
 
             while (count < 1500 && rev < 20) {
 
@@ -63,7 +65,7 @@ public class Sum {
                 }
                 count++;
 
-                // bufferWriter.write(Arrays.toString(str_prev) + "     " + (count) + "\n");
+                bufferWriter.write(Arrays.toString(str_prev) + "     " + (count) + "\n");
                 // System.out.println(Arrays.toString(str_prev) + "     " +(count));
                 // int number = 0;
                 // for (int i = 0; i < graph.length; i++) {
