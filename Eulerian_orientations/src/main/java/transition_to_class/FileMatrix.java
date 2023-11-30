@@ -14,7 +14,7 @@ public class FileMatrix {
         this.col = col;
     }
 
-    private String file = "Eulerian_orientations/src/main/resources/g11/matr.txt";
+    private String file = "Eulerian_orientations/src/main/resources/g11/matrcont.txt";
 
     public void outpud_file() {
         try(FileWriter writer = new FileWriter(file)){
@@ -28,11 +28,11 @@ public class FileMatrix {
                 writer.write(Arrays.deepToString(col.get_list().get(i)).replace("], ", "\n")
                                 .replace("[", "").replace("]", "")
                 );
-                writer.write("\n\n\n");
+                writer.write("\n\n");
 
-                // new ContoursGraph(col.get_list().get(i), writer);
+                new ContoursGraph(col.get_list().get(i), writer);
 
-                // writer.write("\n\n");
+                writer.write("\n\n");
             }
             writer.write("\n");
         } catch(IOException ex){

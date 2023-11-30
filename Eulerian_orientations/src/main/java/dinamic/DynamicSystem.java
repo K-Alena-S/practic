@@ -9,7 +9,7 @@ public class DynamicSystem {
     private int N;
     private int[][] graph;
     private int M = 2;
-    private int NM = 512;
+    private int NM = 2048;
 
     
 
@@ -83,7 +83,7 @@ public class DynamicSystem {
         return number;
     }
 
-    private String file = "Eulerian_orientations/src/main/resources/g9/g9_dinamic_c14.txt";
+    private String file = "Eulerian_orientations/src/main/resources/g11/g11_dinamic_c2.txt";
 
     public void outpud_file(int[][] matrix) {
         try(FileWriter writer = new FileWriter(file)){

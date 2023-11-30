@@ -27,36 +27,34 @@ public class ProcessingN {
 
         file_scan(N, col);
 
-        // file(col);
-
         // Matrix matr = new Matrix(col);
         // matr.deleteColumn(1185, 1188);
 
 
-    //     int beg = 0;
-    //     int end = col.get_list().size();
+        int beg = 0;
+        int end = col.get_list().size();
 
-    //     for (int i = 1203; i < col.get_list().size(); i++) {
-    //         beg = i - 8;
+        for (int i = 1203; i < col.get_list().size(); i++) {
+            beg = i - 8;
 
-    //         while (Thread.activeCount() > 8) {
-    //             try {
-    //                 sleep(1000);
-    //             } catch (InterruptedException e) {
-    //                 e.printStackTrace();
-    //             }
-    //         }
-    //         MyThr mt = new MyThr(col.get_list().get(i), col, i, beg, end);
+            while (Thread.activeCount() > 8) {
+                try {
+                    sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            MyThr mt = new MyThr(col.get_list().get(i), col, i, beg, end);
 
-    //         new Thread(mt).start();
+            new Thread(mt).start();
 
 
-    //         // ClassSearchOdd cso = new ClassSearchOdd(col.get_list().get(i), col, i, beg, end);
-    //         // System.out.println("i = " + (i+1) + "  class = " + cso.getClassgraph());
-    //         // if (i+1 !=  cso.getClassgraph()) {
-    //         //     System.out.println("!!!!!!!!!!!!!!!!!!!!   " +  cso.getClassgraph());
-    //         // }
-    //     }
+            // ClassSearchOdd cso = new ClassSearchOdd(col.get_list().get(i), col, i, beg, end);
+            // System.out.println("i = " + (i+1) + "  class = " + cso.getClassgraph());
+            // if (i+1 !=  cso.getClassgraph()) {
+            //     System.out.println("!!!!!!!!!!!!!!!!!!!!   " +  cso.getClassgraph());
+            // }
+        }
 
     //     // new Transition(col);
 
@@ -66,7 +64,7 @@ public class ProcessingN {
     //     //     new Sum(col.get_list().get(i), (i+1));
     //     // }
 
-    //     // new DynamicSystem(col.get_list().get(0));
+        // new DynamicSystem(col.get_list().get(2));
         
 
     //     // System.out.println(Arrays.deepToString(col.get_list().get(0)).replace("], ", "\n")
@@ -74,37 +72,10 @@ public class ProcessingN {
     //     //         .replace("-1", "0")
     //     // );
 
-        FileMatrix fm = new FileMatrix(col);
-        fm.outpud_file();
+        // FileMatrix fm = new FileMatrix(col);
+        // fm.outpud_file();
         
     }
-
-    // private void file(Collection col){
-    //     try {
-    //         FileInputStream fis = new FileInputStream("Eulerian_orientations/src/main/resources/g9/class.tmp");
-    //         ObjectInputStream ois = new ObjectInputStream(fis);
-    //         ArrayList<int[][]> list = (ArrayList<int[][]>) ois.readObject();
-    //         System.out.println("***** " + list.size());
-
-    //         for (int i = 0; i < list.size(); i++) {
-    //             col.set_list(list.get(i));
-
-    // //             if (i > 260){
-    // //                 System.out.println("Представитель класса: " + (i + 1));
-    // //                 new ContoursGraph(list.get(i));
-    // //                 System.out.println(Arrays.deepToString(list.get(i)).replace("], ", "\n")
-    // //                                 .replace("[", "").replace("]", "")
-    // // //                .replace("-1", "0")
-    // //                 );
-    // //                 System.out.println();
-    // //             }
-    //         }
-
-    //         ois.close();
-    //     } catch (IOException | ClassNotFoundException e) {
-    //         e.printStackTrace();
-    //     }
-    // }
 
 
     private void file_scan(int N, Collection col) {
