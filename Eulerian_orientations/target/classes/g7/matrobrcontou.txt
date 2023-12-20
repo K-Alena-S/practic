@@ -1,0 +1,54 @@
+3
+
+class: 1
+0, -1, -1, -1, 1, 1, 1
+1, 0, -1, -1, -1, 1, 1
+1, 1, 0, -1, -1, -1, 1
+1, 1, 1, 0, -1, -1, -1
+-1, 1, 1, 1, 0, -1, -1
+-1, -1, 1, 1, 1, 0, -1
+-1, -1, -1, 1, 1, 1, 0
+
+Number of contours of length 3 : 0
+Number of contours of length 4 : 4
+Number of contours of length 5 : 0
+Number of contours of length 6 : 0
+Number of contours of length 7 : 0
+
+
+
+class: 2
+0, -1, -1, -1, 1, 1, 1
+1, 0, -1, -1, -1, 1, 1
+1, 1, 0, -1, 1, -1, -1
+1, 1, 1, 0, -1, -1, -1
+-1, 1, -1, 1, 0, -1, 1
+-1, -1, 1, 1, 1, 0, -1
+-1, -1, 1, 1, -1, 1, 0
+
+Number of contours of length 3 : 0
+Number of contours of length 4 : 2
+Number of contours of length 5 : 0
+Number of contours of length 6 : 0
+Number of contours of length 7 : 0
+
+
+
+class: 3
+0, -1, -1, -1, 1, 1, 1
+1, 0, -1, 1, -1, -1, 1
+1, 1, 0, -1, -1, 1, -1
+1, -1, 1, 0, 1, -1, -1
+-1, 1, 1, -1, 0, -1, 1
+-1, 1, -1, 1, 1, 0, -1
+-1, -1, 1, 1, -1, 1, 0
+
+Number of contours of length 3 : 0
+Number of contours of length 4 : 0
+Number of contours of length 5 : 0
+Number of contours of length 6 : 6
+Number of contours of length 7 : 0
+
+
+
+

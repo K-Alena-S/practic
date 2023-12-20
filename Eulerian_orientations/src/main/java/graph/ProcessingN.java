@@ -23,38 +23,65 @@ import java.util.Arrays;
 public class ProcessingN {
     public ProcessingN(int N){
         Collection col = new Collection();
+        // Collection col0 = new Collection();
         // new OddN(N, col);
 
         file_scan(N, col);
+        // file_scan0(N, col0);
 
         // Matrix matr = new Matrix(col);
-        // matr.deleteColumn(1185, 1188);
+        // matr.deleteColumn(1215, 1216);
+
+        // int self_dual = 0;
+        // int dual = 0;
+
+        // int[] dual = new int[2]; // 0 - кол-во самодвойственных, 1 - кол-во двойственных
+        // dual[0] = 0;
+        // dual[1] = 0;
+        // int beg = 0;
+        // int end = col.get_list().size();
+
+        // for (int i = 0; i < col.get_list().size(); i++) {
+        //     System.out.println(dual[0] + "   ^   " + dual[1]);
+        //     while (Thread.activeCount() > 8) {
+        //         try {
+        //             sleep(5000);
+        //         } catch (InterruptedException e) {
+        //             e.printStackTrace();
+        //         }
+        //     }
+        //     Dual mt = new Dual(col.get_list().get(i), col, dual, i, beg, end);
+
+        //     new Thread(mt).start();
 
 
-        int beg = 0;
-        int end = col.get_list().size();
-
-        for (int i = 1203; i < col.get_list().size(); i++) {
-            beg = i - 8;
-
-            while (Thread.activeCount() > 8) {
-                try {
-                    sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-            MyThr mt = new MyThr(col.get_list().get(i), col, i, beg, end);
-
-            new Thread(mt).start();
+        // }
 
 
-            // ClassSearchOdd cso = new ClassSearchOdd(col.get_list().get(i), col, i, beg, end);
-            // System.out.println("i = " + (i+1) + "  class = " + cso.getClassgraph());
-            // if (i+1 !=  cso.getClassgraph()) {
-            //     System.out.println("!!!!!!!!!!!!!!!!!!!!   " +  cso.getClassgraph());
-            // }
-        }
+        // int beg = 0;
+        // int end = col.get_list().size();
+
+        // for (int i = 1220; i < col.get_list().size(); i++) {
+        //     beg = i - 8;
+
+        //     while (Thread.activeCount() > 8) {
+        //         try {
+        //             sleep(1000);
+        //         } catch (InterruptedException e) {
+        //             e.printStackTrace();
+        //         }
+        //     }
+        //     MyThr mt = new MyThr(col.get_list().get(i), col, i, beg, end);
+
+        //     new Thread(mt).start();
+
+
+        //     // ClassSearchOdd cso = new ClassSearchOdd(col.get_list().get(i), col, i, beg, end);
+        //     // System.out.println("i = " + (i+1) + "  class = " + cso.getClassgraph());
+        //     // if (i+1 !=  cso.getClassgraph()) {
+        //     //     System.out.println("!!!!!!!!!!!!!!!!!!!!   " +  cso.getClassgraph());
+        //     // }
+        // }
 
     //     // new Transition(col);
 
@@ -67,10 +94,22 @@ public class ProcessingN {
         // new DynamicSystem(col.get_list().get(2));
         
 
-    //     // System.out.println(Arrays.deepToString(col.get_list().get(0)).replace("], ", "\n")
-    //     //         .replace("[", "").replace("]", "")
-    //     //         .replace("-1", "0")
-    //     // );
+
+        // ClassSearchOdd cso = new ClassSearchOdd(col0.get_list().get(0), col, 0, 0, 15);
+        //     System.out.println("  class = " + cso.getClassgraph());
+
+        // System.out.println(Arrays.deepToString(col.get_list().get(0)).replace("], ", "\n")
+        //         .replace("[", "").replace("]", "")
+        //         .replace("-1", "0")
+        // );
+
+    while (Thread.activeCount() > 1) {
+        try {
+            sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
         // FileMatrix fm = new FileMatrix(col);
         // fm.outpud_file();
@@ -98,7 +137,40 @@ public class ProcessingN {
                 }
                 int[][] a = Arrays.stream(matrix).map(int[]::clone).toArray(int[][]::new);
 
-                // if (k != 1188 && k != 1207)
+                // if (k != 1216)
+                col.set_list(a);
+
+                reader.readLine();
+                reader.readLine();
+            }
+            reader.close();            
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void file_scan0(int N, Collection col) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("Eulerian_orientations/src/main/resources/g9/g0.txt"));
+            int num = Integer.parseInt(reader.readLine());
+            System.out.println("Количество классов " + num);
+            reader.readLine();
+
+            for (int k = 0; k < num; k++) {
+                int[][] matrix = new int[N][N];
+                for (int i = 0; i < N; i++) {
+                    String[] line;
+                    line = reader.readLine().split(", ");
+        
+                    for (int j = 0; j < N; j++) {
+                        matrix[i][j] = Integer.parseInt(line[j]);
+                    }
+        
+                }
+                int[][] a = Arrays.stream(matrix).map(int[]::clone).toArray(int[][]::new);
+
+                // if (k != 1216)
                 col.set_list(a);
 
                 reader.readLine();
