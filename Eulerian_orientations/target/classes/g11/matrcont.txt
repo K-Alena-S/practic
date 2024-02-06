@@ -1,4 +1,4 @@
-1214
+1223
 
 class: 1
 0, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1
@@ -29134,6 +29134,222 @@ Number of contours of length 8 : 7087
 Number of contours of length 9 : 10363
 Number of contours of length 10 : 10201
 Number of contours of length 11 : 5099
+
+
+class: 1215
+0, -1, -1, 1, -1, -1, 1, 1, -1, 1, 1
+1, 0, -1, -1, 1, -1, -1, 1, 1, -1, 1
+1, 1, 0, -1, -1, 1, -1, -1, 1, 1, -1
+-1, 1, 1, 0, -1, -1, -1, -1, 1, 1, 1
+1, -1, 1, 1, 0, -1, -1, 1, -1, 1, -1
+1, 1, -1, 1, 1, 0, -1, -1, -1, -1, 1
+-1, 1, 1, 1, 1, 1, 0, -1, -1, -1, -1
+-1, -1, 1, 1, -1, 1, 1, 0, 1, -1, -1
+1, -1, -1, -1, 1, 1, 1, -1, 0, -1, 1
+-1, 1, -1, -1, -1, 1, 1, 1, 1, 0, -1
+-1, -1, 1, -1, 1, -1, 1, 1, -1, 1, 0
+
+Number of contours of length 3 : 55
+Number of contours of length 4 : 176
+Number of contours of length 5 : 572
+Number of contours of length 6 : 1569
+Number of contours of length 7 : 3725
+Number of contours of length 8 : 7119
+Number of contours of length 9 : 10376
+Number of contours of length 10 : 10200
+Number of contours of length 11 : 5058
+
+
+class: 1216
+0, -1, -1, 1, -1, -1, 1, 1, -1, 1, 1
+1, 0, -1, -1, -1, 1, -1, 1, 1, -1, 1
+1, 1, 0, -1, -1, 1, -1, -1, -1, 1, 1
+-1, 1, 1, 0, -1, -1, -1, -1, 1, 1, 1
+1, 1, 1, 1, 0, -1, -1, 1, -1, -1, -1
+1, -1, -1, 1, 1, 0, -1, -1, 1, 1, -1
+-1, 1, 1, 1, 1, 1, 0, -1, -1, -1, -1
+-1, -1, 1, 1, -1, 1, 1, 0, 1, -1, -1
+1, -1, 1, -1, 1, -1, 1, -1, 0, -1, 1
+-1, 1, -1, -1, 1, -1, 1, 1, 1, 0, -1
+-1, -1, -1, -1, 1, 1, 1, 1, -1, 1, 0
+
+Number of contours of length 3 : 55
+Number of contours of length 4 : 171
+Number of contours of length 5 : 582
+Number of contours of length 6 : 1583
+Number of contours of length 7 : 3822
+Number of contours of length 8 : 7266
+Number of contours of length 9 : 10647
+Number of contours of length 10 : 10418
+Number of contours of length 11 : 5187
+
+
+class: 1217
+0, -1, -1, 1, -1, -1, 1, 1, -1, 1, 1
+1, 0, -1, -1, 1, -1, -1, 1, 1, -1, 1
+1, 1, 0, -1, -1, 1, -1, -1, 1, 1, -1
+-1, 1, 1, 0, -1, -1, -1, -1, 1, 1, 1
+1, -1, 1, 1, 0, -1, -1, 1, -1, 1, -1
+1, 1, -1, 1, 1, 0, -1, -1, -1, -1, 1
+-1, 1, 1, 1, 1, 1, 0, -1, -1, -1, -1
+-1, -1, 1, 1, -1, 1, 1, 0, 1, -1, -1
+1, -1, -1, -1, 1, 1, 1, -1, 0, -1, 1
+-1, 1, -1, -1, -1, 1, 1, 1, 1, 0, -1
+-1, -1, 1, -1, 1, -1, 1, 1, -1, 1, 0
+
+Number of contours of length 3 : 55
+Number of contours of length 4 : 176
+Number of contours of length 5 : 572
+Number of contours of length 6 : 1569
+Number of contours of length 7 : 3725
+Number of contours of length 8 : 7119
+Number of contours of length 9 : 10376
+Number of contours of length 10 : 10200
+Number of contours of length 11 : 5058
+
+
+class: 1218
+0, -1, -1, 1, -1, -1, 1, 1, -1, 1, 1
+1, 0, -1, -1, -1, 1, -1, 1, 1, -1, 1
+1, 1, 0, -1, -1, 1, -1, -1, -1, 1, 1
+-1, 1, 1, 0, -1, -1, -1, -1, 1, 1, 1
+1, 1, 1, 1, 0, -1, -1, 1, -1, -1, -1
+1, -1, -1, 1, 1, 0, -1, -1, 1, 1, -1
+-1, 1, 1, 1, 1, 1, 0, -1, -1, -1, -1
+-1, -1, 1, 1, -1, 1, 1, 0, 1, -1, -1
+1, -1, 1, -1, 1, -1, 1, -1, 0, -1, 1
+-1, 1, -1, -1, 1, -1, 1, 1, 1, 0, -1
+-1, -1, -1, -1, 1, 1, 1, 1, -1, 1, 0
+
+Number of contours of length 3 : 55
+Number of contours of length 4 : 171
+Number of contours of length 5 : 582
+Number of contours of length 6 : 1583
+Number of contours of length 7 : 3822
+Number of contours of length 8 : 7266
+Number of contours of length 9 : 10647
+Number of contours of length 10 : 10418
+Number of contours of length 11 : 5187
+
+
+class: 1219
+0, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1
+1, 0, -1, -1, -1, 1, 1, 1, -1, -1, 1
+1, 1, 0, -1, -1, -1, -1, -1, 1, 1, 1
+1, 1, 1, 0, -1, 1, -1, -1, -1, 1, -1
+1, 1, 1, 1, 0, -1, -1, 1, -1, -1, -1
+1, -1, 1, -1, 1, 0, -1, -1, 1, -1, 1
+-1, -1, 1, 1, 1, 1, 0, -1, -1, 1, -1
+-1, -1, 1, 1, -1, 1, 1, 0, 1, -1, -1
+-1, 1, -1, 1, 1, -1, 1, -1, 0, -1, 1
+-1, 1, -1, -1, 1, 1, -1, 1, 1, 0, -1
+-1, -1, -1, 1, 1, -1, 1, 1, -1, 1, 0
+
+Number of contours of length 3 : 55
+Number of contours of length 4 : 175
+Number of contours of length 5 : 574
+Number of contours of length 6 : 1570
+Number of contours of length 7 : 3740
+Number of contours of length 8 : 7160
+Number of contours of length 9 : 10465
+Number of contours of length 10 : 10296
+Number of contours of length 11 : 5095
+
+
+class: 1220
+0, -1, 1, 1, -1, -1, -1, -1, 1, 1, 1
+1, 0, -1, -1, -1, -1, -1, 1, 1, 1, 1
+-1, 1, 0, -1, -1, 1, 1, -1, 1, -1, 1
+-1, 1, 1, 0, -1, -1, -1, 1, -1, 1, 1
+1, 1, 1, 1, 0, -1, 1, -1, -1, -1, -1
+1, 1, -1, 1, 1, 0, -1, -1, -1, 1, -1
+1, 1, -1, 1, -1, 1, 0, 1, -1, -1, -1
+1, -1, 1, -1, 1, 1, -1, 0, 1, -1, -1
+-1, -1, -1, 1, 1, 1, 1, -1, 0, -1, 1
+-1, -1, 1, -1, 1, -1, 1, 1, 1, 0, -1
+-1, -1, -1, -1, 1, 1, 1, 1, -1, 1, 0
+
+Number of contours of length 3 : 55
+Number of contours of length 4 : 175
+Number of contours of length 5 : 574
+Number of contours of length 6 : 1571
+Number of contours of length 7 : 3750
+Number of contours of length 8 : 7148
+Number of contours of length 9 : 10427
+Number of contours of length 10 : 10214
+Number of contours of length 11 : 5091
+
+
+class: 1221
+0, -1, -1, 1, -1, -1, 1, -1, 1, 1, 1
+1, 0, -1, -1, 1, -1, -1, 1, 1, -1, 1
+1, 1, 0, -1, -1, 1, -1, -1, 1, 1, -1
+-1, 1, 1, 0, -1, -1, -1, 1, -1, 1, 1
+1, -1, 1, 1, 0, -1, 1, -1, -1, 1, -1
+1, 1, -1, 1, 1, 0, -1, -1, -1, -1, 1
+-1, 1, 1, 1, -1, 1, 0, 1, -1, -1, -1
+1, -1, 1, -1, 1, 1, -1, 0, 1, -1, -1
+-1, -1, -1, 1, 1, 1, 1, -1, 0, -1, 1
+-1, 1, -1, -1, -1, 1, 1, 1, 1, 0, -1
+-1, -1, 1, -1, 1, -1, 1, 1, -1, 1, 0
+
+Number of contours of length 3 : 55
+Number of contours of length 4 : 176
+Number of contours of length 5 : 572
+Number of contours of length 6 : 1573
+Number of contours of length 7 : 3729
+Number of contours of length 8 : 7106
+Number of contours of length 9 : 10274
+Number of contours of length 10 : 10076
+Number of contours of length 11 : 4999
+
+
+class: 1222
+0, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1
+1, 0, -1, -1, 1, 1, -1, 1, -1, 1, -1
+1, 1, 0, -1, -1, 1, -1, -1, 1, -1, 1
+1, 1, 1, 0, -1, -1, -1, 1, -1, -1, 1
+1, -1, 1, 1, 0, -1, 1, -1, 1, -1, -1
+1, -1, -1, 1, 1, 0, -1, -1, -1, 1, 1
+-1, 1, 1, 1, -1, 1, 0, -1, -1, 1, -1
+-1, -1, 1, -1, 1, 1, 1, 0, -1, -1, 1
+-1, 1, -1, 1, -1, 1, 1, 1, 0, -1, -1
+-1, -1, 1, 1, 1, -1, -1, 1, 1, 0, -1
+-1, 1, -1, -1, 1, -1, 1, -1, 1, 1, 0
+
+Number of contours of length 3 : 55
+Number of contours of length 4 : 170
+Number of contours of length 5 : 584
+Number of contours of length 6 : 1585
+Number of contours of length 7 : 3845
+Number of contours of length 8 : 7295
+Number of contours of length 9 : 10720
+Number of contours of length 10 : 10446
+Number of contours of length 11 : 5255
+
+
+class: 1223
+0, -1, -1, 1, -1, -1, 1, 1, -1, 1, 1
+1, 0, -1, -1, -1, 1, -1, 1, 1, -1, 1
+1, 1, 0, -1, -1, 1, 1, -1, -1, 1, -1
+-1, 1, 1, 0, -1, -1, -1, -1, 1, 1, 1
+1, 1, 1, 1, 0, -1, -1, 1, -1, -1, -1
+1, -1, -1, 1, 1, 0, -1, -1, 1, 1, -1
+-1, 1, -1, 1, 1, 1, 0, -1, -1, -1, 1
+-1, -1, 1, 1, -1, 1, 1, 0, 1, -1, -1
+1, -1, 1, -1, 1, -1, 1, -1, 0, -1, 1
+-1, 1, -1, -1, 1, -1, 1, 1, 1, 0, -1
+-1, -1, 1, -1, 1, 1, -1, 1, -1, 1, 0
+
+Number of contours of length 3 : 55
+Number of contours of length 4 : 165
+Number of contours of length 5 : 594
+Number of contours of length 6 : 1595
+Number of contours of length 7 : 3960
+Number of contours of length 8 : 7425
+Number of contours of length 9 : 11055
+Number of contours of length 10 : 10681
+Number of contours of length 11 : 5505
 
 
 

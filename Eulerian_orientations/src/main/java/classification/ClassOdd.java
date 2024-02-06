@@ -7,17 +7,17 @@ public class ClassOdd {
     private int classgraph;
 
     public ClassOdd(int[][] graphArray, Collection col) {
-        if (col.get_list().size() == 0){
+        // if (col.get_list().size() == 0){
             int[][] a = Arrays.stream(graphArray).map(int[]::clone).toArray(int[][]::new);
             col.set_list(a);
             classgraph = col.get_list().size();
-        } else{
-            int[][] array = Arrays.stream(graphArray).map(int[]::clone).toArray(int[][]::new);
-            if (!arrayChanges(array, col)){
-                col.set_list(array);
-                classgraph = col.get_list().size();
-            }
-        }
+        // } else{
+        //     int[][] array = Arrays.stream(graphArray).map(int[]::clone).toArray(int[][]::new);
+        //     if (!arrayChanges(array, col)){
+        //         col.set_list(array);
+        //         classgraph = col.get_list().size();
+        //     }
+        // }
 
     }
 

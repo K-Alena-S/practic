@@ -23,6 +23,7 @@ public class Collection {
 
     public void set_list(int[][] graph) {
         graphList.add(graph);
+        // System.out.println("+newcol");
         // FileMatrix fm = new FileMatrix(this);
         // fm.outpud_file();
         // outpud_file();

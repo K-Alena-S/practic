@@ -27,6 +27,9 @@ public class ProcessingN {
         // new OddN(N, col);
 
         file_scan(N, col);
+
+        // new Circulant(N, col);
+
         // file_scan0(N, col0);
 
         // Matrix matr = new Matrix(col);
@@ -91,7 +94,7 @@ public class ProcessingN {
     //     //     new Sum(col.get_list().get(i), (i+1));
     //     // }
 
-        // new DynamicSystem(col.get_list().get(2));
+        new DynamicSystem(col.get_list().get(2));
         
 
 
@@ -103,13 +106,13 @@ public class ProcessingN {
         //         .replace("-1", "0")
         // );
 
-    while (Thread.activeCount() > 1) {
-        try {
-            sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+    // while (Thread.activeCount() > 1) {
+    //     try {
+    //         sleep(1000);
+    //     } catch (InterruptedException e) {
+    //         e.printStackTrace();
+    //     }
+    // }
 
         // FileMatrix fm = new FileMatrix(col);
         // fm.outpud_file();
@@ -119,9 +122,10 @@ public class ProcessingN {
 
     private void file_scan(int N, Collection col) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("Eulerian_orientations/src/main/resources/g11/matrix.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("Eulerian_orientations/src/main/resources/g7/matrix.txt"));
             int num = Integer.parseInt(reader.readLine());
             System.out.println("Количество классов " + num);
+            // for (int i = 0; i < 3; i++)
             reader.readLine();
 
             for (int k = 0; k < num; k++) {
@@ -140,6 +144,7 @@ public class ProcessingN {
                 // if (k != 1216)
                 col.set_list(a);
 
+                // for (int i = 0; i < 13; i++)
                 reader.readLine();
                 reader.readLine();
             }

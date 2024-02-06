@@ -1,0 +1,27 @@
+3
+
+class: 1
+Number of contours of length 3 : 0
+Number of contours of length 4 : 14
+Number of contours of length 5 : 0
+Number of contours of length 6 : 0
+Number of contours of length 7 : 0
+
+
+class: 2
+Number of contours of length 3 : 0
+Number of contours of length 4 : 6
+Number of contours of length 5 : 0
+Number of contours of length 6 : 2
+Number of contours of length 7 : 0
+
+
+class: 3
+Number of contours of length 3 : 0
+Number of contours of length 4 : 0
+Number of contours of length 5 : 0
+Number of contours of length 6 : 14
+Number of contours of length 7 : 0
+
+
+
